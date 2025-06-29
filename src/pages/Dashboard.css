@@ -1,0 +1,173 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f9ff;
+}
+
+/* Container */
+.dashboard {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Header */
+.dashboard-header h2 {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.dashboard-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.dashboard-header span {
+  color: #17a2b8;
+  text-transform: capitalize;
+}
+
+/* Add Task Button */
+.add-task-btn {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #007bff, #00c3ff);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 30px 0;
+  transition: transform 0.2s ease;
+}
+
+.add-task-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Search & Filter */
+.search-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 8px 14px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+.status-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-filter select {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Tasks */
+.task-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-section li {
+  background: #f1f9ff;
+  margin-bottom: 12px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.task-section li.overdue-task {
+  border-left: 4px solid #dc3545;
+  background: #fff5f5;
+}
+
+.task-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.task-actions a,
+.task-actions button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.task-actions button {
+  color: #dc3545;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background: #ffc107;
+}
+
+.status-badge.in-progress {
+  background: #17a2b8;
+}
+
+.status-badge.completed {
+  background: #28a745;
+}
+
+.overdue-label {
+  background: #dc3545;
+  color: #fff;
+  border-radius: 12px;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* Logout Button at Bottom */
+.logout-btn {
+  margin-top: 40px;
+  background: #dc3545;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
