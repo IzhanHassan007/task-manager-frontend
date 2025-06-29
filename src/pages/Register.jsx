@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import api from "../services/api";
-import "./Register.css"; // ✅ Link your Register CSS file
+import "./Register.css"; 
 
 const Register = () => {
   const { login } = useContext(AuthContext);
