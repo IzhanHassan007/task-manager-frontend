@@ -144,9 +144,11 @@ const Dashboard = () => {
                 </div>
 
                 <div className="task-actions">
-                  <Link to={`/edit/${task._id}`}>
+                  {}
+                  <Link to={`/edit-task/${task._id}`}>
                     <FiEdit2 size={16} /> Edit
                   </Link>
+
                   <button onClick={() => handleDelete(task._id)}>
                     <FiTrash2 size={16} /> Delete
                   </button>

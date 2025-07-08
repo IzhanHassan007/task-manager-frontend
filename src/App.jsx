@@ -11,6 +11,8 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import AddEditTask from "./pages/AddEditTask";
 import PrivateRoute from "./components/PrivateRoute";
+import TasksList from './components/TasksList';
+
 
 function App() {
   return (
